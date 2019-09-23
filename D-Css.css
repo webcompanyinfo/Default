@@ -83,16 +83,12 @@ i, em { font-style: italic; }
 /* start commented backslash hack \*/
 * html .cf { height: 1%; }.cf { display: block; }
 .color-white, .color-white h1, .color-white h2, .color-white h3, .color-white h4, .color-white h5, .color-white h6, .color-white span, .color-white a, .color-white strong, .color-white em, .color-white p, .color-white strong, .color-white span, .color-white i, .color-white em, .color-white b, .color-white ul li {color: rgba(255,255,255,1); }
-input, button{-webkit-appearance: none; -moz-appearance: none; appearance: none; }
-button{ border: none; background: #2d2d2d; padding: 10px; color: #fff;}
+button{-webkit-appearance: none; -moz-appearance: none; appearance: none; border: none; background: #2d2d2d; padding: 10px; color: #fff;}
 ol li,ul li { padding: 0; padding-bottom: 5px; color: #2d2d2d; }
 ul,ol { padding: 5px 0; margin-left: 20px; }
 hr.border { border: none; height: 1px; background: #ffffff; width: 100%; display: block; }
 hr.border.show-mobile { display: none; margin: 0; }
 hr.border.left { margin-left: 0; }
-.boxs{ -webkit-box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -o-box-sizing: border-box; box-sizing: border-box; }
-.inline-block li { display: inline-block; }
-.box { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -o-box-sizing: border-box; box-sizing: border-box; }
 .blue-bg { background-color: #18244e; }
 div.wpcf7-validation-errors { display: none !important; }
 /* ==========
@@ -143,3 +139,15 @@ div.wpcf7-validation-errors { display: none !important; }
 .flex-container.auto-set { align-content: space-between; justify-content: space-between; }
 .section-spacing { padding-top: 70px; padding-bottom: 70px; }
 /*----------------------------------------------------------------*/
+input, textarea, button, select, a { -webkit-tap-highlight-color: rgba(0,0,0,0); }
+/* ----- Auto focus fill Remove css ----- */
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus
+input:-webkit-autofill, 
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {-webkit-text-fill-color: inherit !important; -webkit-box-shadow: 0 0 0px 1000px transition inset; transition: background-color 5000s ease-in-out 0s; }
